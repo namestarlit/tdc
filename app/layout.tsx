@@ -8,7 +8,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const baseUrl = 'https://tdcdev.xyz';
+const baseUrl = 'https://tdcdevs.xyz';
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
