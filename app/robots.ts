@@ -1,13 +1,13 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = 'https://tdcdevs.xyz'
+	const baseUrl = "https://tdcdevs.xyz";
 
-    return {
-        rules: {
-            userAgent: '*',
-            allow: '/',
-        },
-        sitemap: `${baseUrl}/sitemap.xml`,
-    }
+	return {
+		rules: {
+			userAgent: "*",
+			allow: "/",
+		},
+		sitemap: `${baseUrl}/sitemap.xml`,
+	};
 }
