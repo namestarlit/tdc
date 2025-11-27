@@ -26,8 +26,9 @@ function RuleItem({ rule }: { rule: Rule }) {
 	return (
 		<motion.div
 			variants={itemVariants}
-			whileHover={{ scale: 1.02, backgroundColor: "rgba(255, 255, 255, 0.08)" }}
-			className="w-full py-4 px-5 rounded-md transition-colors group duration-200 hover:bg-white/5 cursor-pointer border border-transparent hover:border-white/10"
+			initial={{ backgroundColor: "rgba(0, 0, 0, 0)", borderColor: "rgba(0, 0, 0, 0)" }}
+			whileHover={{ scale: 1.02, backgroundColor: "rgba(255, 255, 255, 0.08)", borderColor: "rgba(255, 255, 255, 0.1)" }}
+			className="w-full py-4 px-5 rounded-md transition-colors group duration-200 cursor-pointer border border-transparent"
 		>
 			<div className="flex items-start gap-4 w-full">
 				{emoji && (
